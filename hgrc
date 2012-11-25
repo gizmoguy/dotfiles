@@ -1,0 +1,10 @@
+[ui]
+username = Brad Cowie <brad.cowie@virscient.com>
+
+[extensions]
+hgext.graphlog =
+hgext.convert =
+hgext.extdiff =
+
+[extdiff]
+cmd.meld = 
