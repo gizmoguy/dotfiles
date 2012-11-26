@@ -15,6 +15,7 @@ set smartindent
 set showmatch
 set modeline
 set modelines=5
+set pastetoggle=<F10>
 
 set t_Co=256
 colorscheme molokai
