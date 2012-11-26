@@ -1,0 +1,17 @@
+#!/bin/bash
+
+dotfiles=~/.dotfiles
+old_dotfiles=~/.dotfiles_old/
+files=$1
+
+if [ $# -lt 1 ]; then
+    echo "Usage: $0 [list of dot files]"
+    exit 1
+fi
+
+mkdir -p $old_dotfiles
+
+for file in $@; do
+    mv ~/.$file $old_dotfiles > /dev/null 2>&1
+    ln -s $dotfiles/$file ~/.$file
+done
