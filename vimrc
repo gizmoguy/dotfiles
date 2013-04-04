@@ -27,6 +27,8 @@ if has("autocmd")
     filetype plugin on
 endif
 
+autocmd FileType make setlocal noexpandtab
+
 " Highlight characters past column 80
 if version >= 703
   set cc=80
