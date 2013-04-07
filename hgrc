@@ -5,6 +5,7 @@ username = Brad Cowie <brad.cowie@virscient.com>
 hgext.graphlog =
 hgext.convert =
 hgext.extdiff =
+mq =
 
 [extdiff]
 cmd.meld = 
