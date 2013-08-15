@@ -19,6 +19,9 @@
 [submodule "vim/bundle/ultisnips"]
 	path = vim/bundle/ultisnips
 	url = git://github.com/SirVer/ultisnips.git
+[submodule "vim/bundle/vim-puppet"]
+	path = vim/bundle/vim-puppet
+	url = git://github.com/rodjek/vim-puppet.git
 [submodule "vim/bundle/vim-snippets"]
 	path = vim/bundle/vim-snippets
 	url = git://github.com/honza/vim-snippets.git
