@@ -57,6 +57,7 @@ if has("autocmd")
 endif
 
 autocmd FileType make setlocal noexpandtab
+autocmd FileType ruby set tabstop=2|set shiftwidth=2|set softtabstop=2|set expandtab
 
 " Highlight characters past column 80
 " In Vim >= 7.3, also highlight columns 120+
