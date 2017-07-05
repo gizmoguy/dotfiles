@@ -81,6 +81,9 @@ if version >= 702
   autocmd BufWinLeave * call clearmatches()
 endif
 
+" Set bash instead of fish as vim shell
+set shell=/bin/bash
+
 " Add a :W which saves with sudo
 command! W w !sudo tee % > /dev/null
 
