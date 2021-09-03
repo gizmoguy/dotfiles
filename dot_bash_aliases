@@ -1,2 +1,3 @@
 alias ip='ip -color=auto'
+alias irc='tmux -L weechat attach'
 alias ovs-ofctl='ovs-ofctl --protocols=OpenFlow13'
