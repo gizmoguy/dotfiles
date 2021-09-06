@@ -13,10 +13,16 @@ endif
 if has('python3')
     python3 << EOF
 import vim
-from neovim import VERSION as v
-import msgpack
-vim.vars['modern_nvim'] = (v.major, v.minor, v.patch) >= (0, 4, 1)
-vim.vars['modern_msgpack'] = msgpack.version >= (1, 0, 0)
+try:
+    from neovim import VERSION as v
+    vim.vars['modern_nvim'] = (v.major, v.minor, v.patch) >= (0, 4, 1)
+except ImportError:
+    vim.vars['modern_nvim'] = False
+try:
+    import msgpack
+    vim.vars['modern_msgpack'] = msgpack.version >= (1, 0, 0)
+except ImportError:
+    vim.vars['modern_msgpack'] = False
 EOF
 else
     let modern_nvim = 0
