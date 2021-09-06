@@ -31,11 +31,15 @@ endif
 " lightline
 set laststatus=2
 
-" wilder
-call wilder#setup({'modes': [':', '/', '?']})
-call wilder#set_option('renderer', wilder#popupmenu_renderer({
-      \ 'highlighter': wilder#basic_highlighter(),
-      \ }))
+" wildmenu
+if has('popup_hide')
+    call wilder#setup({'modes': [':', '/', '?']})
+    call wilder#set_option('renderer', wilder#popupmenu_renderer({
+          \ 'highlighter': wilder#basic_highlighter(),
+          \ }))
+else
+    set wildmenu
+endif
 
 " monokai
 syntax on
