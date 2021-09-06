@@ -11,11 +11,33 @@ if !has('nvim') && has('python3')
 endif
 
 if has('python3')
-    " Plugins that require python rpc features
-    if has('nvim')
-        Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+    python3 << EOF
+import vim
+from neovim import VERSION as v
+import msgpack
+vim.vars['modern_nvim'] = (v.major, v.minor, v.patch) >= (0, 4, 1)
+vim.vars['modern_msgpack'] = msgpack.version >= (1, 0, 0)
+EOF
+else
+    let modern_nvim = 0
+    let modern_msgpack = 0
+endif
+
+if modern_nvim
+    " Plugins that require modern python rpc features
+    if modern_msgpack
+        " Plugins that require modern msgpack
+        if has('nvim')
+            Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+        else
+            Plug 'Shougo/deoplete.nvim'
+        endif
     else
-        Plug 'Shougo/deoplete.nvim'
+        if has('nvim')
+            Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins', 'tag': '5.2' }
+        else
+            Plug 'Shougo/deoplete.nvim' { 'tag': '5.2' }
+        endif
     endif
     let g:deoplete#enable_at_startup = 1
 endif
