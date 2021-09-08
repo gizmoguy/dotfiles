@@ -45,6 +45,12 @@ if modern_nvim
             Plug 'Shougo/deoplete.nvim' { 'tag': '5.2' }
         endif
     endif
+
+    if has('nvim')
+        Plug 'gelguy/wilder.nvim', { 'do': ':UpdateRemotePlugins' }
+    else
+        Plug 'gelguy/wilder.nvim'
+    endif
 endif
 
 Plug 'semanser/vim-outdated-plugins'
@@ -54,14 +60,6 @@ Plug 'ypcrts/securemodelines'
 Plug 'crusoexia/vim-monokai'
 
 Plug 'itchyny/lightline.vim'
-
-if has('popup_hide')
-    if has('nvim')
-        Plug 'gelguy/wilder.nvim', { 'do': ':UpdateRemotePlugins' }
-    else
-        Plug 'gelguy/wilder.nvim'
-    endif
-endif
 
 Plug 'preservim/nerdtree'
 
