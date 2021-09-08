@@ -54,6 +54,8 @@ if has('python3') && modern_nvim
         endif
     endif
 
+    Plug 'deoplete-plugins/deoplete-jedi'
+
     if has('nvim')
         Plug 'gelguy/wilder.nvim', { 'do': ':UpdateRemotePlugins' }
     else
