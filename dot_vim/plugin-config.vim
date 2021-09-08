@@ -28,5 +28,10 @@ let test#strategy = 'neoterm'
 " neoterm
 let g:neoterm_default_mod = 'botright'
 
+" ale
+let g:ale_linters = {
+    \   'python': ['bandit', 'flake8', 'mypy', 'pylint'],
+    \ }
+
 " deoplete
 let g:deoplete#enable_at_startup = 1
