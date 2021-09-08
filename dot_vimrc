@@ -1,5 +1,6 @@
 source ~/.vim/vim-plug.vim
-source ~/.vim/plugins.vim
+source ~/.vim/plugin-load.vim
+source ~/.vim/plugin-config.vim
 source ~/.vim/filetypes.vim
 source ~/.vim/config.vim
 source ~/.vim/keymappings.vim

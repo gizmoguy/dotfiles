@@ -45,11 +45,9 @@ if modern_nvim
             Plug 'Shougo/deoplete.nvim' { 'tag': '5.2' }
         endif
     endif
-    let g:deoplete#enable_at_startup = 1
 endif
 
 Plug 'semanser/vim-outdated-plugins'
-let g:outdated_plugins_silent_mode = 1
 
 Plug 'ypcrts/securemodelines'
 
@@ -68,15 +66,6 @@ endif
 Plug 'preservim/nerdtree'
 
 Plug 'itchyny/vim-gitbranch'
-let g:lightline = {
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
-      \ },
-      \ 'component_function': {
-      \   'gitbranch': 'gitbranch#name'
-      \ },
-      \ }
 
 Plug 'ntpeters/vim-better-whitespace'
 
@@ -87,10 +76,8 @@ Plug 'vim-syntastic/syntastic'
 Plug 'dense-analysis/ale'
 
 Plug 'kassio/neoterm'
-let g:neoterm_default_mod = 'botright'
 
 Plug 'vim-test/vim-test'
-let test#strategy = 'neoterm'
 
 Plug 'Vimjas/vim-python-pep8-indent'
 
