@@ -4,13 +4,15 @@ else
     call plug#begin('~/.vim/plugged')
 endif
 
-if !has('nvim') && has('python3')
-    " Enable python rpc features in vim
-    Plug 'roxma/nvim-yarp'
-    Plug 'roxma/vim-hug-neovim-rpc'
-endif
+" disable python2
+let g:loaded_python_provider = 0
 
-if has('python3')
+if isdirectory(expand('~/Dev/venvs/vim/'))
+    " activate virtualenv
+    let $PATH = expand('~/Dev/venvs/vim/bin').':'.$PATH
+    let modern_nvim = 1
+    let modern_msgpack = 1
+elseif has('python3')
     python3 << EOF
 import vim
 try:
@@ -29,7 +31,13 @@ else
     let modern_msgpack = 0
 endif
 
-if modern_nvim
+if has('python3') && !has('nvim')
+    " Enable python rpc features in vim
+    Plug 'roxma/nvim-yarp'
+    Plug 'roxma/vim-hug-neovim-rpc'
+endif
+
+if has('python3') && modern_nvim
     " Plugins that require modern python rpc features
     if modern_msgpack
         " Plugins that require modern msgpack
