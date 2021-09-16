@@ -52,3 +52,7 @@ let g:ale_linters = {
 
 " deoplete
 let g:deoplete#enable_at_startup = 1
+
+" float-preview
+set completeopt-=preview
+let g:float_preview#docked = 0
