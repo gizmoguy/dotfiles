@@ -10,6 +10,7 @@ let g:loaded_python_provider = 0
 if isdirectory(expand('~/Dev/venvs/vim/'))
     " activate virtualenv
     let $PATH = expand('~/Dev/venvs/vim/bin').':'.$PATH
+    let g:python3_host_prog = expand('~/Dev/venvs/vim/bin/python')
     let modern_nvim = 1
     let modern_msgpack = 1
 elseif has('python3')
