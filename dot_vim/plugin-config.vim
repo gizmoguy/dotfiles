@@ -52,6 +52,7 @@ let g:ale_linters = {
 
 " deoplete
 let g:deoplete#enable_at_startup = 1
+let g:deoplete#sources#jedi#show_docstring = 1
 
 " float-preview
 set completeopt-=preview
