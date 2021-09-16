@@ -56,6 +56,8 @@ if has('python3') && modern_nvim
 
     Plug 'ncm2/float-preview.nvim'
 
+    Plug 'Shougo/echodoc.vim'
+
     Plug 'deoplete-plugins/deoplete-jedi'
 
     if has('nvim')

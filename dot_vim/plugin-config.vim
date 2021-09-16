@@ -50,6 +50,10 @@ let g:ale_linters = {
     \   'python': ['bandit', 'flake8', 'mypy', 'pylint'],
     \ }
 
+" echodoc
+let g:echodoc_enable_at_startup = 1
+let g:echodoc#type = 'floating'
+
 " deoplete
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#sources#jedi#show_docstring = 1
