@@ -71,6 +71,8 @@ Plug 'crusoexia/vim-monokai'
 
 Plug 'itchyny/lightline.vim'
 
+Plug 'maximbaz/lightline-ale'
+
 Plug 'preservim/nerdtree'
 
 Plug 'itchyny/vim-gitbranch'
