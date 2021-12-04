@@ -49,6 +49,7 @@ let g:neoterm_default_mod = 'botright'
 let g:ale_linters = {
     \   'python': ['bandit', 'flake8', 'mypy', 'pylint'],
     \ }
+let g:ale_python_flake8_options = '--config=$HOME/.config/flake8'
 
 " echodoc
 let g:echodoc_enable_at_startup = 1
