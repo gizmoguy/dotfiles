@@ -86,8 +86,6 @@ Plug 'ntpeters/vim-better-whitespace'
 
 Plug 'Yggdroot/indentLine'
 
-Plug 'vim-syntastic/syntastic'
-
 Plug 'dense-analysis/ale'
 
 Plug 'kassio/neoterm'
