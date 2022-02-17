@@ -51,7 +51,7 @@ if has('python3') && modern_nvim
         if has('nvim')
             Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins', 'tag': '5.2' }
         else
-            Plug 'Shougo/deoplete.nvim' { 'tag': '5.2' }
+            Plug 'Shougo/deoplete.nvim', { 'tag': '5.2' }
         endif
     endif
 
