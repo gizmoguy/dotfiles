@@ -60,5 +60,7 @@ let g:deoplete#enable_at_startup = 1
 let g:deoplete#sources#jedi#show_docstring = 1
 
 " float-preview
-set completeopt-=preview
-let g:float_preview#docked = 0
+if has_key(plugs, 'float-preview.nvim')
+    set completeopt-=preview
+    let g:float_preview#docked = 0
+endif
