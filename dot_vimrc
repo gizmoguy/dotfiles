@@ -1,6 +1,8 @@
-source ~/.vim/vim-plug.vim
-source ~/.vim/plugin-load.vim
-source ~/.vim/plugin-config.vim
+if v:version >= 703
+    source ~/.vim/vim-plug.vim
+    source ~/.vim/plugin-load.vim
+    source ~/.vim/plugin-config.vim
+endif
 source ~/.vim/filetypes.vim
 source ~/.vim/config.vim
 source ~/.vim/keymappings.vim

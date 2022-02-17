@@ -16,11 +16,14 @@ set softtabstop=4
 set autoindent
 
 " visual
+syntax on
 set confirm
 set cursorline
-set colorcolumn=100
 set incsearch
 set hlsearch
+if v:version >= 703
+    set colorcolumn=100
+endif
 
 if has("gui_running")
     set mouse=a
@@ -32,8 +35,9 @@ endif
 set laststatus=2
 
 " monokai
-syntax on
-colorscheme monokai
-if !has('gui_running')
-    set t_Co=256
+if has_key(plugs, 'vim-monokai')
+    colorscheme monokai
+    if !has('gui_running')
+        set t_Co=256
+    endif
 endif
