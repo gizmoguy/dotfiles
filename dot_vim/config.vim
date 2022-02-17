@@ -35,7 +35,7 @@ endif
 set laststatus=2
 
 " monokai
-if has_key(plugs, 'vim-monokai')
+if exists("plugs") && has_key(plugs, 'vim-monokai')
     colorscheme monokai
     if !has('gui_running')
         set t_Co=256
