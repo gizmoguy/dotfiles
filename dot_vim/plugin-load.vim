@@ -65,8 +65,6 @@ if has('python3') && modern_nvim
 
     if has('nvim')
         Plug 'gelguy/wilder.nvim', { 'do': ':UpdateRemotePlugins' }
-    else
-        Plug 'gelguy/wilder.nvim'
     endif
 endif
 
