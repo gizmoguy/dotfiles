@@ -13,6 +13,12 @@ if isdirectory(expand('~/Dev/venvs/vim/'))
     let g:python3_host_prog = expand('~/Dev/venvs/vim/bin/python')
     let modern_nvim = 1
     let modern_msgpack = 1
+elseif isdirectory(expand('/scratch/venvs/vim/'))
+    " activate virtualenv
+    let $PATH = expand('/scratch/venvs/vim/bin').':'.$PATH
+    let g:python3_host_prog = expand('/scratch/venvs/vim/bin/python')
+    let modern_nvim = 1
+    let modern_msgpack = 1
 elseif has('python3')
     python3 << EOF
 import vim
