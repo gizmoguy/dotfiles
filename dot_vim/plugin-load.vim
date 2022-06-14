@@ -74,6 +74,14 @@ if has('python3') && modern_nvim
     endif
 endif
 
+if isdirectory(expand('/opt/go/bin/'))
+    let $PATH = expand('/opt/go/bin/').':'.$PATH
+endif
+
+if isdirectory(expand('~/go/bin/'))
+    let $PATH = expand('~/go/bin/').':'.$PATH
+endif
+
 Plug 'semanser/vim-outdated-plugins'
 
 Plug 'ypcrts/securemodelines'
