@@ -72,6 +72,12 @@ if has('python3') && modern_nvim
     if has('nvim')
         Plug 'gelguy/wilder.nvim', { 'do': ':UpdateRemotePlugins' }
     endif
+
+    if has('nvim')
+        Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+    else
+        Plug 'fatih/vim-go'
+    endif
 endif
 
 if isdirectory(expand('/opt/go/bin/'))
