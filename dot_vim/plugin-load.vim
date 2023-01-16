@@ -116,5 +116,7 @@ Plug 'Vimjas/vim-python-pep8-indent'
 
 Plug 'pearofducks/ansible-vim'
 
+Plug 'GutenYe/json5.vim'
+
 " Load plugins
 call plug#end()
