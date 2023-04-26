@@ -46,10 +46,15 @@ let test#strategy = 'neoterm'
 let g:neoterm_default_mod = 'botright'
 
 " ale
+let g:ale_fix_on_save = 1
 let g:ale_linters = {
-    \   'python': ['bandit', 'flake8', 'mypy', 'pylint'],
+    \   'python': ['bandit', 'ruff', 'mypy', 'pylint'],
+    \ }
+let g:ale_fixers = {
+    \   'python': ['ruff'],
     \ }
 let g:ale_python_flake8_options = '--config=$HOME/.config/flake8'
+let g:ale_python_ruff_options = '--config=$HOME/.config/ruff'
 
 " echodoc
 let g:echodoc_enable_at_startup = 1

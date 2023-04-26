@@ -1,0 +1,3 @@
+line-length = 100
+
+unfixable = ["F841", "F401"]
