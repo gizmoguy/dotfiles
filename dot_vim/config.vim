@@ -31,6 +31,8 @@ else
     set mouse=
 endif
 
+set nohidden
+
 " lightline
 set laststatus=2
 
