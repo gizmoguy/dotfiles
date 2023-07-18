@@ -54,7 +54,6 @@ let g:ale_fixers = {
     \   'python': ['ruff'],
     \ }
 let g:ale_python_flake8_options = '--config=$HOME/.config/flake8'
-let g:ale_python_ruff_options = '--config=$HOME/.config/ruff'
 
 " echodoc
 let g:echodoc_enable_at_startup = 1
