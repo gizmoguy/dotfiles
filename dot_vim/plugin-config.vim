@@ -52,10 +52,12 @@ let g:ale_linters = {
     \ }
 let g:ale_linters_ignore = {
     \   'c': ['cc'],
+    \   'cpp': ['cc'],
     \}
 let g:ale_fixers = {
     \   'python': ['ruff'],
     \   'c': ['clang-format'],
+    \   'cpp': ['clang-format'],
     \ }
 let g:ale_python_flake8_options = '--config=$HOME/.config/flake8'
 
