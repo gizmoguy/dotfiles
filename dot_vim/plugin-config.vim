@@ -55,7 +55,7 @@ let g:ale_linters_ignore = {
     \   'cpp': ['cc'],
     \}
 let g:ale_fixers = {
-    \   'python': ['ruff'],
+    \   'python': ['ruff', 'ruff_format'],
     \   'c': ['clang-format'],
     \   'cpp': ['clang-format'],
     \ }
