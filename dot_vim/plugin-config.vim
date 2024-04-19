@@ -60,6 +60,7 @@ let g:ale_fixers = {
     \   'cpp': ['clang-format'],
     \ }
 let g:ale_python_flake8_options = '--config=$HOME/.config/flake8'
+let g:ale_python_ruff_options = '--no-fix'
 
 " echodoc
 let g:echodoc_enable_at_startup = 1
