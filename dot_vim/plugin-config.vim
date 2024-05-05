@@ -58,8 +58,10 @@ let g:ale_fixers = {
     \   'python': ['ruff', 'ruff_format'],
     \   'c': ['clang-format'],
     \   'cpp': ['clang-format'],
+    \   'sh': ['shfmt'],
     \ }
 let g:ale_python_flake8_options = '--config=$HOME/.config/flake8'
+let g:ale_sh_shfmt_options = '--indent 4'
 
 " echodoc
 let g:echodoc_enable_at_startup = 1
