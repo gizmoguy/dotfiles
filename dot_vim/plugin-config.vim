@@ -59,6 +59,7 @@ let g:ale_fixers = {
     \   'c': ['clang-format'],
     \   'cpp': ['clang-format'],
     \   'sh': ['shfmt'],
+    \   'proto': ['buf-format'],
     \ }
 let g:ale_python_flake8_options = '--config=$HOME/.config/flake8'
 let g:ale_sh_shfmt_options = '--indent 4'
