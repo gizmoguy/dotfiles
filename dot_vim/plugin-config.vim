@@ -60,9 +60,22 @@ let g:ale_fixers = {
     \   'cpp': ['clang-format'],
     \   'sh': ['shfmt'],
     \   'proto': ['buf-format'],
+    \   'xml': ['xmllint'],
+    \   'css': ['prettier'],
+    \   'scss': ['prettier'],
+    \   'less': ['prettier'],
+    \   'json': ['prettier'],
+    \   'json5': ['prettier'],
+    \   'jsonc': ['prettier'],
+    \   'javascript': ['prettier'],
+    \   'typescript': ['prettier'],
+    \   'yaml': ['prettier'],
+    \   'yaml.ansible': ['prettier'],
+    \   'html': ['prettier'],
     \ }
 let g:ale_python_flake8_options = '--config=$HOME/.config/flake8'
 let g:ale_sh_shfmt_options = '--indent 4'
+let g:ale_javascript_prettier_options = '--config $HOME/.config/prettier/prettierrc.yml'
 
 " echodoc
 let g:echodoc_enable_at_startup = 1
