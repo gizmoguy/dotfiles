@@ -74,6 +74,7 @@ let g:ale_fixers = {
     \   'yaml.ansible': ['dprint'],
     \   'html': ['dprint'],
     \   'markdown': ['dprint'],
+    \   'sql': ['sqlfluff'],
     \   'toml': ['dprint'],
     \ }
 let g:ale_python_flake8_options = '--config=$HOME/.config/flake8'
