@@ -61,21 +61,25 @@ let g:ale_fixers = {
     \   'sh': ['shfmt'],
     \   'proto': ['buf-format'],
     \   'xml': ['xmllint'],
-    \   'css': ['prettier'],
-    \   'scss': ['prettier'],
-    \   'less': ['prettier'],
+    \   'dockerfile': ['dprint'],
+    \   'css': ['dprint'],
+    \   'scss': ['dprint'],
+    \   'less': ['dprint'],
     \   'json': ['prettier'],
     \   'json5': ['prettier'],
     \   'jsonc': ['prettier'],
-    \   'javascript': ['prettier'],
-    \   'typescript': ['prettier'],
-    \   'yaml': ['prettier'],
-    \   'yaml.ansible': ['prettier'],
-    \   'html': ['prettier'],
+    \   'javascript': ['dprint'],
+    \   'typescript': ['dprint'],
+    \   'yaml': ['dprint'],
+    \   'yaml.ansible': ['dprint'],
+    \   'html': ['dprint'],
+    \   'markdown': ['dprint'],
+    \   'toml': ['dprint'],
     \ }
 let g:ale_python_flake8_options = '--config=$HOME/.config/flake8'
 let g:ale_sh_shfmt_options = '--indent 4'
 let g:ale_javascript_prettier_options = '--config $HOME/.config/prettier/prettierrc.yml'
+let g:ale_dprint_config = '$HOME/.config/dprint/dprint.json'
 
 " echodoc
 let g:echodoc_enable_at_startup = 1
