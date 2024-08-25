@@ -90,3 +90,6 @@ if has_key(plugs, 'float-preview.nvim')
     set completeopt-=preview
     let g:float_preview#docked = 0
 endif
+
+" json
+let g:vim_json_conceal=0
