@@ -73,7 +73,6 @@ let g:ale_fixers = {
     \   'yaml': ['dprint'],
     \   'yaml.ansible': ['dprint'],
     \   'html': ['dprint'],
-    \   'markdown': ['dprint'],
     \   'sql': ['sqlfluff'],
     \   'toml': ['dprint'],
     \ }
