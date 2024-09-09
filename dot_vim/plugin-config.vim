@@ -80,6 +80,7 @@ let g:ale_python_flake8_options = '--config=$HOME/.config/flake8'
 let g:ale_sh_shfmt_options = '--indent 4'
 let g:ale_javascript_prettier_options = '--config $HOME/.config/prettier/prettierrc.yml'
 let g:ale_dprint_config = '$HOME/.config/dprint/dprint.json'
+let g:ale_cspell_options = '--config $HOME/.config/cspell/cspell.json'
 
 " echodoc
 let g:echodoc_enable_at_startup = 1
