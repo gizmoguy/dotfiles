@@ -1,6 +1,7 @@
 [user]
 	name = Brad Cowie
 	email = {{ .email }}
+	signingkey = ~/.ssh/id_ed25519.pub
 [core]
 	editor = vim
 [init]
@@ -11,6 +12,8 @@
 	sort = authordate
 [column]
 	branch = auto
+[gpg]
+	format = ssh
 [includeIf "gitdir:~/Dev/wand/"]
 	path = ~/Dev/wand/.gitconfig
 [includeIf "gitdir:~/Dev/faucet/"]
