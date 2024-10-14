@@ -53,11 +53,13 @@ let g:ale_linters = {
 let g:ale_linters_ignore = {
     \   'c': ['cc'],
     \   'cpp': ['cc'],
+    \   'go': ['gofmt'],
     \}
 let g:ale_fixers = {
     \   'python': ['ruff', 'ruff_format'],
     \   'c': ['clang-format'],
     \   'cpp': ['clang-format'],
+    \   'go': ['gofumpt', 'golines', 'gopls'],
     \   'sh': ['shfmt'],
     \   'proto': ['buf-format'],
     \   'xml': ['xmllint'],
@@ -81,6 +83,7 @@ let g:ale_sh_shfmt_options = '--indent 4'
 let g:ale_javascript_prettier_options = '--config $HOME/.config/prettier/prettierrc.yml'
 let g:ale_dprint_config = '$HOME/.config/dprint/dprint.json'
 let g:ale_cspell_options = '--config $HOME/.config/cspell/cspell.json'
+let g:ale_go_golangci_lint_options = '--config $HOME/.config/golangci-lint/golangci.yml'
 
 " echodoc
 let g:echodoc_enable_at_startup = 1

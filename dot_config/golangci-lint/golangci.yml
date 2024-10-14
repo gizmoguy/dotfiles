@@ -1,0 +1,14 @@
+---
+linters:
+  enable-all: true
+  disable:
+    - cyclop
+    - depguard
+    - execinquery
+    - exportloopref
+    - gci
+    - ginkgolinter
+    - godot
+    - gofumpt
+    - gomnd
+    - stylecheck
