@@ -4,6 +4,7 @@
 	signingKey = ~/.ssh/id_ed25519.pub
 [core]
 	editor = vim
+	pager = delta
 [init]
 	defaultBranch = main
 [push]
@@ -16,6 +17,13 @@
 	gpgSign = true
 [gpg]
 	format = ssh
+[interactive]
+	diffFilter = delta --color-only
+[merge]
+	conflictstyle = zdiff3
+[delta]
+	side-by-side = true
+	navigate = true
 [includeIf "gitdir:~/Dev/wand/"]
 	path = ~/Dev/wand/.gitconfig
 [includeIf "gitdir:~/Dev/faucet/"]
