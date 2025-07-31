@@ -72,6 +72,8 @@ let g:ale_fixers = {
     \   'jsonc': ['prettier'],
     \   'javascript': ['dprint'],
     \   'typescript': ['dprint'],
+    \   'javascriptreact': ['dprint'],
+    \   'typescriptreact': ['dprint'],
     \   'yaml': ['dprint'],
     \   'yaml.ansible': ['dprint'],
     \   'html': ['dprint'],
